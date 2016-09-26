@@ -1,5 +1,5 @@
 <h1>New Article</h1>
-
+<!--
 <%= form_for :article, url: articles_path do |f| %>
 
 	<% if @article.errors.any? %>
@@ -29,6 +29,8 @@
 	<p>
 		<%= f.submit %>
 	</p>
-<% end %>
+<% end %> -->
+
+<%= render 'form' %>
 
 <%= link_to 'Back', articles_path %>
