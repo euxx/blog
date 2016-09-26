@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-	has_many :comments
+	has_many :comments, dependent: :destroy
 
 	#same code, but not work
 	# validates :title, presence: true,
